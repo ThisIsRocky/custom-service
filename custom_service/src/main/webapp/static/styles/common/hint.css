@@ -1,0 +1,31 @@
+.panel {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding-bottom:20px;
+    }
+    .fa-hint {
+        float: left;
+        width: 100%;
+    }
+    .fa-hint:before{
+        color: #3F89C8;
+        content: "\f044";
+        font-size: 20px;
+    }
+    .fa-hint span:first-child{
+        display: inline-block;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        color: #3F89C8;
+    }
+    .fa-hint-err span:first-child{
+        color: #D52423;
+    }
+    .hint-err-panel {
+        border-color:#D52423;
+    }
+    .fa-hint-err:before{
+        color: #D52423;
+        content:"\f06a";
+    }

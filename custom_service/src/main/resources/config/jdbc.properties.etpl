@@ -1,0 +1,4 @@
+jdbc.driverClassName=com.mysql.jdbc.Driver
+jdbc.url={{_ .jdbc_url}}
+jdbc.username={{_ .jdbc_username}}
+jdbc.password={{_ .jdbc_password}}

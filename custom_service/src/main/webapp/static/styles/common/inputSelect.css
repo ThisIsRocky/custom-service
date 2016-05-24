@@ -1,0 +1,95 @@
+.pointer {
+	cursor: pointer;
+}
+.none {
+	display: none;
+}
+
+.selectUl {
+	display: none;
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc !important;
+    box-shadow: 1px 1px 3px #ededed;
+    position: absolute;
+    width:170px;
+    z-index: 9999;
+    list-style: outside none none;    
+    margin: 0 0 0px 0px;
+    padding: 0;
+}
+.selectUl li {
+    color: #858585;
+    cursor: default;
+    font: 12px/20px arial;
+    padding: 0 0px;
+    position: relative;
+}
+.selectUl li:hover{ 
+	border:1px solid;
+	color:#858585;
+}
+.hovered {
+	border:1px solid;
+	color:#858585;
+}
+.param_field {
+	margin-top:10px;
+	float: left;
+}
+.param_field_short {
+	margin-top:10px;
+	float: left;
+}
+.col-sm-1 {
+	margin-top:12px;
+}
+.form-label {
+	width : 70px;
+	text-align : right;
+}
+.form-label-sm {
+    width : 50px;
+}
+.form-label-lg {
+	width : 100px;
+}
+.form-label-xlg {
+	width : 180px;
+}
+.param_field_group {
+	margin-top:10px;
+	padding-top: 8px;
+}
+.form-label-group {
+	width : auto;
+	text-align : right;
+}
+
+.param_field_btn {
+	margin-top:10px;
+}
+
+.params_content {
+    margin-bottom:10px;
+}
+
+.form-query {
+	padding: 0 5px;
+}
+.form-query>div.param_field{
+	width:275px; 
+}
+.form-query>div.param_field_short{
+	padding-right: 10px;
+}
+.form-query>div.param_field_time{
+	width:280px; 
+}
+.form-query .form-control{
+	width:170px; 
+	font-size: 14px;
+}
+.form-query .form-label{
+	text-align: right;
+}
+

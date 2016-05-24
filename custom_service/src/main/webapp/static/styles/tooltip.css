@@ -1,0 +1,23 @@
+.tooltipinputerr {
+/*	BORDER-RIGHT: #eee 2px solid; BORDER-TOP: #eee 2px solid; BACKGROUND: url(../image/false.png) #ffff99 no-repeat right center; BORDER-LEFT: #eee 2px solid; BORDER-BOTTOM: #eee 2px solid;
+*/
+	border: 1px solid red !important;
+}
+.tooltipinputok {
+	/* BORDER-RIGHT: green 2px solid; BORDER-TOP: green 2px solid; BACKGROUND: url(../image/true.png) no-repeat right center; BORDER-LEFT: green 2px solid; BORDER-BOTTOM: green 2px solid */
+}
+.leftImage {
+	BACKGROUND: url(../image/x1.gif) no-repeat right top; WIDTH: 14px; HEIGHT: 33px
+}
+.leftImage_1 {
+	BACKGROUND: url(../image/x1-1.gif) no-repeat right 7px; WIDTH: 14px; HEIGHT: 35px;
+}
+.rightImage {
+	BACKGROUND: url(../image/x3.gif) no-repeat left top; WIDTH: 6px; HEIGHT: 33px
+}
+.contenImage {
+	PADDING-RIGHT: 10px; FONT-SIZE: 12px; BACKGROUND: url(../image/x2.gif) 50% top; TEXT-INDENT: 5px;FONT-FAMILY: Arial; LINE-HEIGHT: 38px;  HEIGHT: 33px
+}
+.tableTip {
+	DISPLAY: none; FILTER: alpha(opacity=90); OVERFLOW: hidden; POSITION: absolute; BORDER-COLLAPSE: collapse; empty-cells: hide; opacity: 0.9;
+}

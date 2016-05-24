@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/layouts/">
+	<decorator name="frame" page="default.jsp">
+	    <pattern>/index/frame</pattern>
+	</decorator>
+	<decorator name="default" page="include.jsp">
+		<pattern>/sidebar</pattern>
+        <pattern>/index/example1</pattern>
+        <pattern>/index/toList</pattern>
+        	</decorator>
+</decorators>
