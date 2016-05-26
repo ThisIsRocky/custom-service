@@ -21,4 +21,6 @@
 			</list>
 		</constructor-arg>
 	</bean> -->
+	<context:component-scan base-package="me.ele.cs" />
+	<context:annotation-config />
 </beans>

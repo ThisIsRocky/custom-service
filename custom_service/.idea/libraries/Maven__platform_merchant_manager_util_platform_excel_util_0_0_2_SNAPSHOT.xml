@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: platform.merchant.manager.util:platform-excel-util:0.0.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/platform/merchant/manager/util/platform-excel-util/0.0.2-SNAPSHOT/platform-excel-util-0.0.2-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/platform/merchant/manager/util/platform-excel-util/0.0.2-SNAPSHOT/platform-excel-util-0.0.2-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/platform/merchant/manager/util/platform-excel-util/0.0.2-SNAPSHOT/platform-excel-util-0.0.2-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

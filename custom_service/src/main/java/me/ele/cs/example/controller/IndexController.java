@@ -3,6 +3,8 @@ package me.ele.cs.example.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import me.ele.cs.push.server.PushServer;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +18,8 @@ import me.ele.cs.example.model.Example;
 @RequestMapping("/index")
 public class IndexController {
 
-    
+    @Autowired
+    private PushServer pushServer;
     @RequestMapping("/frame")
     public String frame(Model model) {
         List<Menu> menus = loadMenu();

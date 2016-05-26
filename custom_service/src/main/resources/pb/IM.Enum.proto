@@ -1,0 +1,14 @@
+syntax = "proto2";
+package IM.Enum;
+option java_package = "me.ele.cs.push.protobuf";
+option optimize_for = LITE_RUNTIME;
+
+enum ConnectStatus {
+    SUCCESS = 0X0001;
+}
+
+enum LoginStatus {
+    SUCESS = 0x0001;
+    USER_NOT_EXISTS = 0x0002;
+    PASSWORD_ERROR = 0x0003;
+}

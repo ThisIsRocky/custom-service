@@ -1,0 +1,8 @@
+package IM.Enum;
+
+
+enum LoginStatus {
+    SUCCESS = 0x0001;
+    USER_NOT_EXISTS = 0x0002;
+    PASSWORD_ERROR = 0x0003;
+}

@@ -1,0 +1,20 @@
+package IM.Message;
+import "IM.Enum.proto";
+
+
+message LoginRequest {
+    required string user_name = 1;
+    required string password = 2;
+}
+
+message LoginResponse {
+    required IM.Enum.LoginStatus status = 1;
+}
+
+
+
+message PushMessage {
+     required uint64 message_id = 1;
+     required string content = 2;
+     optional string redirect_url = 3;
+}

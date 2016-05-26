@@ -1,3 +1,12 @@
+<script src="${ctx}/static/scripts/protobuf/long.js"></script>
+<script src="${ctx}/static/scripts/protobuf/bytebuffer.js"></script>
+<script src="${ctx}/static/scripts/protobuf/protobuf.js"></script>
+<script src="${ctx}/static/scripts/protobuf/protobuf.ext.js"></script>
+<script src="${ctx}/static/scripts/protobuf/push.js"></script>
+<script src="${ctx}/static/scripts/md5.js"></script>
+<script>
+    pushClient.init();
+</script>
 <div class="row">
     <div class="col-lg-3">
         <div class="ibox float-e-margins">

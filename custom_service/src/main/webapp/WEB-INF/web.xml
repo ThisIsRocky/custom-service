@@ -65,6 +65,10 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>default</servlet-name>
+        <url-pattern>*.proto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
         <url-pattern>*.css</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
@@ -117,7 +121,7 @@
         <filter-class>com.alibaba.druid.support.http.WebStatFilter</filter-class>
         <init-param>
             <param-name>exclusions</param-name>
-            <param-value>*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*</param-value>
+            <param-value>*.js,*.proto,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*</param-value>
         </init-param>
     </filter>
     <filter-mapping>
