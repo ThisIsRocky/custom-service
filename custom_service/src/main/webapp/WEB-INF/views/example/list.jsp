@@ -5,10 +5,54 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <c:set var="ctx" value="${pageContext.request.contextPath}" />
-<div class="jqGrid_wrapper">
-	<table id="table_list_1"></table>
-	<div id="pager_list_1"></div>
-</div>
+    <form role="form" class="row form-inline queryParams">
+	    <div class="form-group">
+		    <label for="name" class="col-sm-3 control-label text-right">姓名：</label>
+		    <div class="col-sm-4">
+		        <input type="text" class="form-control" id="name" placeholder="姓名">
+		    </div>
+	    </div>
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label text-right">姓名：</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="name" placeholder="姓名">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label text-right">姓名：</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="name" placeholder="姓名">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label text-right">姓名：</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="name" placeholder="姓名">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label text-right">姓名：</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="name" placeholder="姓名">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label text-right">姓名：</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="name" placeholder="姓名">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label text-right">姓名：</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="name" placeholder="姓名">
+            </div>
+        </div>
+    </form>
+	<div class="jqGrid_wrapper">
+		<table id="table_list_1"></table>
+		<div id="pager_list_1"></div>
+	</div>
 
 <script type="text/javascript">
     $(function() {

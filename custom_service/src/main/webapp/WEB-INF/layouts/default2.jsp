@@ -32,7 +32,7 @@
 
 <body class="md-skin pace-done">
     <%@ include file="/WEB-INF/layouts/sidebar.jsp"%>
-    <div id="page-wrapper" class="dashbard-1" style="min-height: 432px;background: white;">
+    <div id="page-wrapper" class="dashbard-1" style="min-height: 432px;"">
 <%--         <%@ include file="/WEB-INF/layouts/header.jsp"%>
  --%>            
         <div class="row content-tabs" id="content-tabs">

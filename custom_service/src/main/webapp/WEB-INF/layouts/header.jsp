@@ -17,7 +17,7 @@
         </div>
             <ul class="nav navbar-top-links navbar-right">
                 <li>
-                    <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
+                    <span class="m-r-sm text-muted welcome-message">饿了么客服系统</span>
                 </li>
                 <li class="dropdown">
                     <a href="#" data-toggle="dropdown" class="dropdown-toggle count-info">
@@ -27,8 +27,8 @@
                         <li>
                             <a href="mailbox.html">
                                 <div>
-                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                    <i class="fa fa-envelope fa-fw"></i> 你有16条消息
+                                    <span class="pull-right text-muted small">4个月前</span>
                                 </div>
                             </a>
                         </li>

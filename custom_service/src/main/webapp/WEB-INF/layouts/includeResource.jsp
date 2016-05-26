@@ -4,6 +4,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <c:set var="ctx" value="${pageContext.request.contextPath}" />
+<link rel="stylesheet" href="${ctx}/static/styles/common/default.css" />
 <link rel="stylesheet" href="${ctx}/static/styles/common/inputSelect.css" />
 <link rel="stylesheet" href="${ctx}/static/styles/tooltip.css" />
 
