@@ -1,117 +1,13 @@
-.form-control {
-	
+.queryParams>div {
+    margin-bottom:5px !important;
+    margin-top:5px !important;
+}
+.form-inline .control-label {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    vertical-align: middle;
 }
 
-.row {
-	margin-left:0;
-}
-
-/** form css start **/
-div.content{
-    margin:5px;
-    width:99%;
-}
-div.divContent{
-    margin:6px 3px;
-    width:30%;
-    display: inline-table;
-    white-space:nowrap;
-}
-div.divContent div.left{
-    display: inline-table;
-    text-align:right;
-    vertical-align:middle;
-    width:30%;
-}
-div.divContent div.right{
-    display: inline-table;
-    vertical-align:middle;
-    width:auto;
-}
-div.singleContent{
-    margin:6px 3px;
-    white-space:nowrap;
-}
-div.singleContent div.left{
-    display: inline-table;
-    text-align:right;
-    vertical-align:middle;
-    width:30%;
-}
-div.singleContent div.right{
-    display: inline-table;
-    vertical-align:middle;
-    width:auto;
-}
-div.singleContent div.span{
-    text-align:right;
-    display: inline-table;
-    vertical-align:middle;
-    width:auto;
-}
-/** form css end **/
-
-.widget-body .widget-main{
-	margin : 0px;
-	padding : 0px;
-}
-.widget-box {
-	width : 99.5%;
-	min-height : 98%;
-}
-/**防止横向滚动条**/
-#breadcrumbs{
-	width : 99.4%;
-}
-.zs-auth {
-	display: none !important;
-}
-.ui-jqgrid .ui-jqgrid-hdiv{
-	height :38px;
-	line-height: 9px;
-}
-
-.data-table .col-xs-12 {
-	padding:5px 12px 5px 0px;
-}
-.page-content {
-	padding: 8px 5px 24px 0px;
-}
-.ui_content {
-	display: block;	
-}
-.with-input {
-	padding: 1px 8px;
-}
-.row {
-	margin-right: 0px;
-}
-.clear {
-	clear: both;
-}
-.form-text {
-	padding-top: 7px;
-	text-align: left;
-	margin-bottom: 8px;
-}
-
-th.ui-th-column div{
-	white-space:normal !important;
-	padding:0px;
-	text-align: center;
-	line-height:12px;
-}
-.cursor-pointer {
-	cursor: pointer;
-}
-
-.ui-tabs .ui-tabs-panel {
-	 padding: 16px 12px;
-}
-.img-save {
-	color:rgba(50,145,149,0.5);
-}
-.img-save:hover {
-	color:rgba(50,145,149,1);
-	cursor:pointer;
-}
+/* .themeControl{
+	text-align:center;
+} */

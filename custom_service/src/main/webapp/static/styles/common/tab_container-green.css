@@ -1,0 +1,95 @@
+.content-tabs {
+    background: #fafafa none repeat scroll 0 0;
+    height: 42px;
+    line-height: 40px;
+    position: relative;
+}
+.content-tabs .roll-nav, .page-tabs-list {
+    color: #999;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 40px;
+    z-index: 2;
+}
+.content-tabs .roll-left {
+    border-right: 1px solid #eee;
+    left: 0;
+}
+.content-tabs .roll-right {
+    border-left: 1px solid #eee;
+    right: 0;
+}
+.content-tabs button {
+    background: #fff none repeat scroll 0 0;
+    border: 0 none;
+    height: 40px;
+    outline: 0 none;
+    width: 40px;
+}
+.content-tabs button:hover {
+    background: #fafafa none repeat scroll 0 0;
+}
+nav.page-tabs {
+    height: 40px;
+    margin-left: 40px;
+    overflow: hidden;
+    width: 100000px;
+}
+nav.page-tabs .page-tabs-content {
+    float: left;
+}
+.page-tabs a {
+    border-right: 1px solid #eee;
+    display: block;
+    float: left;
+    padding: 0 15px;
+}
+.page-tabs a i:hover {
+    color: #c00;
+}
+.content-tabs .roll-nav:hover, .page-tabs a:hover {
+    background: #f2f2f2 none repeat scroll 0 0;
+    color: #777;
+    cursor: pointer;
+}
+.roll-right.J_tabRight {
+    right: 140px;
+}
+.roll-right.btn-group {
+    padding: 0;
+    right: 60px;
+    width: 80px;
+}
+.roll-right.btn-group button {
+    width: 80px;
+}
+.roll-right.J_tabExit {
+    background: #fff none repeat scroll 0 0;
+    height: 40px;
+    outline: 0 none;
+    width: 60px;
+}
+.content-tabs {
+    border-bottom: 2px solid #1ab394;
+}
+.page-tabs a {
+    color: #999;
+}
+.page-tabs a i {
+    color: #ccc;
+}
+.page-tabs a.active {
+    background: #1ab394 none repeat scroll 0 0;
+    color: white;
+}
+.page-tabs a.active i:hover, .page-tabs a.active:hover {
+    background: #1ab394 none repeat scroll 0 0;
+    color: #fff;
+}
+#navbar-minimalize{
+    background:#fafafa;
+    border-color: white;
+    padding-top:10px;
+}

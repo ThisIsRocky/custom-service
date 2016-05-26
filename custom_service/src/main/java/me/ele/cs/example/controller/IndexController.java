@@ -70,11 +70,13 @@ public class IndexController {
         c2.setLevel(2);
         cm.add(c2);
         
-        Menu c3 = new Menu();
-        c3.setMenuName("测试列表");
-        c3.setUrl("/index/toList");
-        c3.setLevel(2);
-        cm.add(c3);
+        for(int i = 0; i < 20; i++) {
+            Menu c3 = new Menu();
+            c3.setMenuName("测试列表"+i);
+            c3.setUrl("/index/toList?asd="+i);
+            c3.setLevel(2);
+            cm.add(c3);
+        }
         
         m.setChildMenu(cm);
         
