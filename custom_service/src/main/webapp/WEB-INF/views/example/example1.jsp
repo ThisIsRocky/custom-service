@@ -6,6 +6,9 @@
 <script src="${ctx}/static/scripts/md5.js"></script>
 <script>
     pushClient.init();
+    pushClient.addPushMessageHandler(function(msg) {
+       $('.row').append(msg.getContent());
+    });
 </script>
 <div class="row">
     <div class="col-lg-3">

@@ -16,13 +16,13 @@ import java.util.Map;
  * Created by iser on 16/5/26.
  */
 public class MessageObjectRegister {
-    public static final Map<String, MessageLite> messageLiteMap;
-    public static final Map<String, MessageHandler> handlerMap;
+    public static final Map<String, MessageEntry> keyMap;
+    public static final Map<MessageLite, MessageEntry> messageLiteMap;
 
 
     static {
+        keyMap = new HashMap<>();
         messageLiteMap = new HashMap<>();
-        handlerMap = new HashMap<>();
         register("IM.Message.PushMessage", IMMessage.PushMessage.getDefaultInstance(), new MessageHandler<IMMessage.PushMessage>() {
             @Override
             public void handle(ChannelHandlerContext ctx, IMMessage.PushMessage o) {
@@ -55,17 +55,26 @@ public class MessageObjectRegister {
     }
 
     public static MessageLite getMessageLite(String key) {
-        return messageLiteMap.get(key);
+        return keyMap.get(key).getMessageLite();
     }
 
     public static MessageHandler getHandler(String key) {
-        return handlerMap.get(key);
+        return keyMap.get(key).getMessageHandler();
+    }
+
+    public static MessageLite getMessageLite(MessageLite messageLite) {
+        return messageLiteMap.get(messageLite).getMessageLite();
+    }
+
+    public static MessageHandler getHandler(MessageLite messageLite) {
+        return messageLiteMap.get(messageLite).getMessageHandler();
     }
 
     private static void register(String packageName, MessageLite messageLite, MessageHandler messageHandler) {
         String messageObjectKey = MessageObjectKeyGen.keygen(packageName);
-        messageLiteMap.put(messageObjectKey, messageLite);
-        handlerMap.put(messageObjectKey, messageHandler);
+        MessageEntry messageEntry = new MessageEntry(messageObjectKey, messageLite, messageHandler);
+        keyMap.put(messageObjectKey, messageEntry);
+        messageLiteMap.put(messageLite, messageEntry);
     }
 
 

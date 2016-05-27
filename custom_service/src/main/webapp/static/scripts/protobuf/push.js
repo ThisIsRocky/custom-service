@@ -2,11 +2,11 @@ var pushClient = {
     Message : null,
     messageObjMap : {},
     socket : null,
+    pushMessageHandler: null,
     init : function() {
         if (typeof dcodeIO === 'undefined' || !dcodeIO.ProtoBuf) {
             return;
         }
-        // Initialize ProtoBuf.js
         var ProtoBuf = dcodeIO.ProtoBuf;
         var builder = ProtoBuf.loadProtoFile("/static/pb/IM.Message.proto");
         pushClient.Message = builder.build("IM.Message");
@@ -15,7 +15,7 @@ var pushClient = {
         pushClient.messageObjMap[ProtoBufTool.keygen(pushClient.Message.PushMessage)] = pushClient.Message.PushMessage;
 
         pushClient.socket = new WebSocket("ws://localhost:2048/ws");
-        pushClient.socket.binaryType = "arraybuffer"; // We are talking binary
+        pushClient.socket.binaryType = "arraybuffer";
 
 
         pushClient.socket.onopen = function() {
@@ -27,18 +27,22 @@ var pushClient = {
 
         pushClient.socket.onmessage = function(evt) {
             try {
-                // Decode the Message
                 var data = evt.data;
                 var header = data.slice(0, 8);
                 var content = data.slice(8);
                 var messageObjKey = String.fromCharCode.apply(null, new Uint8Array(header));
                 var _Message = pushClient.messageObjMap[messageObjKey];
                 var msg = _Message.decode(content);
-                alert(msg);
+                if (_Message == pushClient.Message.PushMessage) {
+                    pushClient.pushMessageHandler(msg);
+                }
             } catch (err) {
                 alert(err);
             }
         };
+    },
+    addPushMessageHandler : function(fn) {
+      pushClient.pushMessageHandler = fn;
     },
 
     login : function (userName, password) {

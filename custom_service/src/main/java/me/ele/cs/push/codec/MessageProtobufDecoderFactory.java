@@ -51,16 +51,16 @@ public class MessageProtobufDecoderFactory extends MessageToMessageDecoder<ByteB
             offset = 0;
         }
         System.arraycopy(array, 0, header, 0, HEADER_LENGTH);
-
+        String headerStr = new String(header);
         if (extensionRegistry == null) {
-                out.add(MessageObjectRegister.getMessageLite(new String(header)).getParserForType().parseFrom(array, offset + HEADER_LENGTH, length - HEADER_LENGTH));
+                out.add(MessageObjectRegister.getMessageLite(headerStr).getParserForType().parseFrom(array, offset + HEADER_LENGTH, length - HEADER_LENGTH));
         } else {
-                out.add(MessageObjectRegister.getMessageLite(new String(header)).getParserForType().parseFrom(
+                out.add(MessageObjectRegister.getMessageLite(headerStr).getParserForType().parseFrom(
                         array, offset + HEADER_LENGTH, length - HEADER_LENGTH, extensionRegistry));
         }
 
         out.forEach(messageLite -> {
-            MessageObjectRegister.getHandler(new String(header)).handle(ctx, messageLite);
+            MessageObjectRegister.getHandler(headerStr).handle(ctx, messageLite);
         });
 
 
